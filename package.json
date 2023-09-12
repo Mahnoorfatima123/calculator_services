@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.mjs"
   },
   "keywords": [],
   "author": "",

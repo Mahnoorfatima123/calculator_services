@@ -1,9 +1,9 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import * as math from 'mathjs';
+const app = express();
 export default app;
 
-const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Array to store calculation history

@@ -9,9 +9,9 @@ describe('Calculator Controller', () => {
   });
 
   it('should return an error for an invalid calculation', async () => {
-    //const response = await request(app).get('/calculus?query=invalid-expression');
-    //expect(response.status).toBe(400);
-    //expect(response.body).toEqual({ error: true, message: 'Error: Undefined symbol: invalid-expression' });
+    const response = await request(app).get('/calculus?query=invalid-expression');
+    expect(response.status).toBe(400);
+    expect(response.body).toEqual({ error: true, message: 'Error: Undefined symbol: invalid-expression' });
   });
 
   // Add more unit tests as needed
