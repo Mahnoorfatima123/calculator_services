@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import * as math from 'mathjs';
 const app = express();
-export default app;
+
 
 const PORT = process.env.PORT || 3000;
 
@@ -44,3 +44,6 @@ app.get('/calculus/history', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+export default app;
